@@ -32,7 +32,7 @@ app.use(cookieParser());
 app.use(expressSession({
     secret: 'so many questions',
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: false
 }));
 app.use(express.static(path.join(__dirname, 'public'))); // angular application
 

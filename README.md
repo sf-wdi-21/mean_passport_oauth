@@ -56,7 +56,7 @@ source: http://tutorials.jenkov.com/oauth2/overview.html
     - Create a new application
         - Name: mean_questions_oauth
         - Description: learnings the twitters oath
-        - Website: http://www.localhost-form-now.com
+        - Website: http://www.localhost-for-now.com
         - Callback Url: `http://127.0.0.1:3000/auth/twitter/callback` (aka `localhost:3000`!)
 
 
@@ -67,7 +67,7 @@ Once you’ve registered your application, you should see the following informat
 - Twitter’s oath endpoints:
 
 | description | endpoint |
-| :———— | :———— |
+| :---------- | :------- |
 | App-only authentication | https://api.twitter.com/oauth2/token |
 | Request token URL |   https://api.twitter.com/oauth/request_token |
 | Authorize URL |   https://api.twitter.com/oauth/authorize |

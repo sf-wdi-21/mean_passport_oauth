@@ -12,8 +12,14 @@ auth.use(passport.session());
 // configure passport
 passport.use(new localStrategy(User.authenticate()));
 // TODO: twitter strategy
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+
+passport.serializeUser(function(user, cb) {
+  cb(null, user);
+});
+
+passport.deserializeUser(function(obj, cb) {
+  cb(null, obj);
+});
 
 
 /**********

@@ -67,7 +67,6 @@ app.controller('loginController', function ($scope, $rootScope, $location, AuthS
           $location.path('/');
           $scope.disabled = false;
           $scope.loginForm = {};
-          $rootScope.$broadcast('loggedIn'); // TELL THE OTHER CONTROLLERS WE'RE LOGGED IN
         })
         // handle error
         .catch(function () {
